@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ba69e66b0601ca7489a5299efdfc0ac9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - stats: {instanceID: 0}
+  - attacking: {instanceID: 0}
+  - damageNumber: {fileID: 7247063868047417981, guid: c373bc107bdae0742bb2fb804674bf2e, type: 3}
+  - flashMaterial: {fileID: 2100000, guid: e11fc1a57c70a754b8fb96d28a93a732, type: 2}
+  - defaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - collider: {instanceID: 0}
+  - hitSound: {fileID: 8300000, guid: c502f6ac4cf4d2c4eb86a2634c17f3a3, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

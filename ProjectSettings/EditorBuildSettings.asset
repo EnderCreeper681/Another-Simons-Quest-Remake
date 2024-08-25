@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Solus Field Fleamen.unity
+    guid: 20a366106f7e83240bab8c08af9d0aa0
+  - enabled: 1
+    path: Assets/Scenes/Title Screen.unity
+    guid: c3494ab4ea3820c499c950cdc810e357
+  - enabled: 1
+    path: Assets/Scenes/Alba Forest Lake.unity
+    guid: 32c87680038b6814286da54ee138827a
+  - enabled: 1
+    path: Assets/Scenes/Alba Forest Knife.unity
+    guid: 53fa6873c33f50444a0a22ebbdd302bb
+  - enabled: 1
+    path: Assets/Scenes/Alba Forest Heights.unity
+    guid: b7d9e3c60c83def4bb8d7e04d1b64a2f
+  - enabled: 1
+    path: Assets/Scenes/Virtus Village.unity
+    guid: 1991b9b063a30f64bbbf12e4b8a57d23
+  - enabled: 1
+    path: Assets/Scenes/Game Over Screen.unity
+    guid: ebca1344d657f284e9a9387acc2ab5b5
+  - enabled: 1
+    path: Assets/Scenes/Alba Forest Bridge.unity
+    guid: 921e413233ae09442a22f168b911b754
+  - enabled: 1
+    path: Assets/Scenes/Alba Forest Save.unity
+    guid: 01b0dca79ff634c40982c278d4ecd84e
+  - enabled: 1
+    path: Assets/Scenes/Alba Forest Boss.unity
+    guid: cb9ca148cf1e8c04fba3b87b7eb45139
+  - enabled: 1
+    path: Assets/Scenes/Alba Forest Crossroads.unity
+    guid: 7cbafb24b6e66ac47b64c054ca142cf5
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 538ffd05f902ca34faf2b453442cf673, type: 2}
