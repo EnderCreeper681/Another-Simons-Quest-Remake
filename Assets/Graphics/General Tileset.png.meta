@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -191,7 +191,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bridge_3
+      name: water_surface
       rect:
         serializedVersion: 2
         x: 16
@@ -211,6 +211,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: dogeblock
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6734e0061a97f74f8e5a719c999c150
+      internalID: -1981842465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -225,7 +246,8 @@ TextureImporter:
       bridge_0: -38452095
       bridge_1: 1384044682
       bridge_2: -1910386196
-      bridge_3: 2030094733
+      dogeblock: -1981842465
+      water_surface: 2030094733
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
