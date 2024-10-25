@@ -217,11 +217,12 @@ public class Movement : MonoBehaviour
         }
         else if(isBackdashing)
         {
-            rb.velocity = new Vector2(backdashTimer * 50 * -direction, velocity.y) * Time.fixedDeltaTime * 60;
+            rb.velocity = new Vector2(backdashTimer * 35 * -direction, velocity.y) * Time.fixedDeltaTime * 60;
             afterimageTimer -= Time.deltaTime;
             if (afterimageTimer <= 0)
             { 
-                GameObject afterimageClone = Instantiate(afterimage, transform.position, transform.rotation); 
+                GameObject afterimageClone = Instantiate(afterimage, transform.position, transform.rotation);
+                afterimageClone.GetComponent<SpriteRenderer>().sprite = GetComponent<SpriteRenderer>().sprite;
                 if(direction == -1) { afterimageClone.transform.rotation = Quaternion.Euler(0, 180, 0); }
                 afterimageTimer = 0.05f; 
             }
@@ -295,9 +296,10 @@ public class Movement : MonoBehaviour
     private void Backdash()
     {
         isBackdashing = true;
+        attacking.attackTimer = 0;
         anim.SetBool("isBackdashing", true);
         backdashTimer = 0.5f;
-        backdashDelay = 1f;
+        backdashDelay = 0.7f;
     }
 
     private void GroundAndCeilingCheck()

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Attacking : MonoBehaviour
 {
     [SerializeField] private int whipLevel = 1;
-    [SerializeField] private float attackTimer;
+    public float attackTimer;
     [SerializeField] private BoxCollider2D hitbox;
     [SerializeField] private BoxCollider2D hitboxSmall;
     [SerializeField] private BoxCollider2D hitboxSmallCrouch;

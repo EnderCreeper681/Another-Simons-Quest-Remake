@@ -8600,8 +8600,8 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 0.46
-  m_YDamping: 0.46
+  m_XDamping: 0
+  m_YDamping: 0
   m_ZDamping: 0
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
@@ -8920,7 +8920,7 @@ Transform:
   m_GameObject: {fileID: 1764354209}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 728.195, y: 14.992081, z: -10}
+  m_LocalPosition: {x: 528.4597, y: 14.99208, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

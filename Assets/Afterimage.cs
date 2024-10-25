@@ -7,10 +7,7 @@ public class Afterimage : MonoBehaviour
     [SerializeField] private float r = 1;
     [SerializeField] private float g = 1;
     [SerializeField] private float b = 1;
-    void Start()
-    {
-        
-    }
+
 
     void Update()
     {

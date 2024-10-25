@@ -7,10 +7,10 @@ public class Whip : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         Enemy hitEnemy = collider.GetComponent<Enemy>();
-        if (hitEnemy != null && hitEnemy.iFrames <= 0)
+        if (hitEnemy != null && hitEnemy.whipIframes <= 0)
         {
             hitEnemy.TakeDamage(attacking.whipBaseDamage + Mathf.RoundToInt(stats.strength));
-            hitEnemy.iFrames = 0.1f;
+            hitEnemy.whipIframes = 0.1f;
         }
     }
 }

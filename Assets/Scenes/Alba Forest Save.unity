@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657755, g: 0.4964127, b: 0.57481825, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 70
-    OrthographicSize: 5
+    OrthographicSize: 7
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -218,7 +218,7 @@ Transform:
   m_GameObject: {fileID: 36300772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 310.30002, y: 8.81, z: -10}
+  m_LocalPosition: {x: 478.5, y: 8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -298,10 +298,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 24.9, y: 7.656}
-      - {x: 0, y: 7.656}
-      - {x: 0, y: -6.349982}
-      - {x: 24.9, y: -6.346909}
+    - - {x: 25, y: 14}
+      - {x: 0, y: 14}
+      - {x: 0, y: 0}
+      - {x: 25, y: 0}
   m_UseDelaunayMesh: 0
 --- !u!4 &226649276
 Transform:
@@ -312,7 +312,7 @@ Transform:
   m_GameObject: {fileID: 226649274}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 466.06, y: 7.35, z: 0}
+  m_LocalPosition: {x: 466, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3000,7 +3000,7 @@ Camera:
   far clip plane: 1000
   field of view: 70
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -3067,7 +3067,7 @@ Transform:
   m_GameObject: {fileID: 1285734676}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.59, y: 16.27, z: -10}
+  m_LocalPosition: {x: 478.5, y: 8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3086,8 +3086,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AssetsPPU: 16
-  m_RefResolutionX: 320
-  m_RefResolutionY: 180
+  m_RefResolutionX: 400
+  m_RefResolutionY: 224
   m_UpscaleRT: 0
   m_PixelSnapping: 1
   m_CropFrameX: 1
@@ -3335,7 +3335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7629419115131059517, guid: 0f70e50c354377d4fbdc3a471960a7c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.66
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 7629419115131059517, guid: 0f70e50c354377d4fbdc3a471960a7c1, type: 3}
       propertyPath: m_LocalPosition.z

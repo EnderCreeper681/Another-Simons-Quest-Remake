@@ -102,17 +102,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
+  exp: 0
+  damage: 0
   stats: {fileID: 0}
   attacking: {fileID: 0}
   damageNumber: {fileID: 0}
   flashMaterial: {fileID: 0}
   defaultMaterial: {fileID: 0}
-  damage: 0
   wasHitByLightning: 0
   collider: {fileID: 0}
   iFrames: 0
+  whipIframes: 0
   contactDamage: 0
+  dropClass: 0
   hitSound: {fileID: 8300000, guid: c502f6ac4cf4d2c4eb86a2634c17f3a3, type: 3}
+  coin1: {fileID: 0}
+  coin2: {fileID: 0}
+  coin3: {fileID: 0}
+  coin4: {fileID: 0}
   smallHeart: {fileID: 4204145781247641783, guid: 73baffdc8d2ae1f43863787ace0ff11a, type: 3}
   largeHeart: {fileID: 7861864270413049653, guid: 7227a30d37082c84cb5ce1537a34abcf, type: 3}
   smallCoin: {fileID: 2900099215409268982, guid: ffa12f3ff20f3c449923d42c7f285263, type: 3}
@@ -132,17 +139,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
+  exp: 0
+  damage: 0
   stats: {fileID: 0}
   attacking: {fileID: 0}
   damageNumber: {fileID: 0}
   flashMaterial: {fileID: 2100000, guid: e11fc1a57c70a754b8fb96d28a93a732, type: 2}
   defaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  damage: 0
   wasHitByLightning: 0
   collider: {fileID: 0}
   iFrames: 0
+  whipIframes: 0
   contactDamage: 0
+  dropClass: 0
   hitSound: {fileID: 0}
+  coin1: {fileID: 0}
+  coin2: {fileID: 0}
+  coin3: {fileID: 0}
+  coin4: {fileID: 0}
 --- !u!61 &721642663284718785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -235,7 +249,7 @@ Transform:
   m_GameObject: {fileID: 4216192186723793935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.343, z: 0}
+  m_LocalPosition: {x: 0, y: 0.37549978, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
