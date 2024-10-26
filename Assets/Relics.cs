@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Relics : MonoBehaviour 
 {
@@ -9,7 +10,7 @@ public class Relics : MonoBehaviour
     public GameObject descriptionWindow;
     private Pausing pausing;
     [SerializeField] private TMP_Text titleText;
-    [SerializeField] private GameObject descriptionText;
+    [SerializeField] private TMP_Text descriptionText;
     [SerializeField] private bool isSubweapon;
     
 
@@ -41,19 +42,16 @@ public class Relics : MonoBehaviour
 
             if (!isSubweapon) { stats.relics.Add(title); }          
             else { attacking.subweaponsNew.Add(thisSubweapon); }
-
-
-
-            titleText.text = title;
+          
+            
+            foreach(Transform child in descriptionWindow.transform)
+            {
+                if(child.name == "Item text") { child.GetComponent<TMP_Text>().text = title; }
+                if(child.name == "Description text") { child.GetComponent<TMP_Text>().text = description; }
+            }
             Instantiate(descriptionWindow, Camera.main.transform.position + new Vector3(0, 0, 10), Quaternion.identity);
-            GameObject desc = Instantiate(descriptionText, Camera.main.transform.position + new Vector3(0, 0, 10), Quaternion.identity);
-            
 
 
-            
-            desc.GetComponent<TMP_Text>().text = description;
-                
-            
             pausing.TextPause();
             Destroy(gameObject);
         }

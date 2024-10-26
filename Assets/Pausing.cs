@@ -13,6 +13,9 @@ public class Pausing : MonoBehaviour
     [SerializeField] private TMP_Text levelText;
     [SerializeField] private TMP_Text expText;
     [SerializeField] private TMP_Text goldText;
+    [SerializeField] private TMP_Text hpText;
+    [SerializeField] private TMP_Text heartText;
+    [SerializeField] private GameObject currentWindow;
 
 
     void Update()
@@ -27,7 +30,10 @@ public class Pausing : MonoBehaviour
             Unpause();
         }
 
-        if (Input.anyKeyDown && isTextPaused) { TextUnpause(); }
+        if (Input.anyKeyDown && currentWindow != null) 
+        { 
+            currentWindow.GetComponent<Animator>().SetTrigger("Close");
+        }
     }
 
     public void Pause()
@@ -39,6 +45,8 @@ public class Pausing : MonoBehaviour
         levelText.text = "SIMON LVL " + stats.level;
         expText.text = "EXP " + stats.currentExperience + "/" + stats.nextExperience;
         goldText.text = "GOLD: " + stats.gold;
+        hpText.text = "HP " + stats.currentHealth + "/" + stats.maxHealth;
+        heartText.text = "SP " + stats.currentHearts + "/" + stats.maxHearts;
     }
 
     public void Unpause()
@@ -52,13 +60,12 @@ public class Pausing : MonoBehaviour
     {
         isTextPaused = true;
         Time.timeScale = 0;
+        currentWindow = GameObject.FindGameObjectWithTag("Window");
     }
 
-    private void TextUnpause()
+    public void TextUnpause()
     {
         isTextPaused = false;
         Time.timeScale = 1;
-        GameObject[] textWindows = GameObject.FindGameObjectsWithTag("Window");
-        foreach (GameObject obj in textWindows) { Destroy(obj); }
     }
 }

@@ -38,6 +38,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private Stats stats;
     public float stunDuration;
     [SerializeField] private Attacking attacking;
+    [SerializeField] private Pausing pausing;
     public GameObject currentOneWayPlatform;
     public Collider2D[] groundColliders;
     public Collider2D[] ceilingColliders;
@@ -66,21 +67,23 @@ public class Movement : MonoBehaviour
         if(Input.GetButton("Crouch") && Input.GetButtonDown("Jump") && currentOneWayPlatform != null) { StartCoroutine(DisableCollision()); }
         if(Input.GetButton("Crouch") && Input.GetButtonDown("Jump") && doubleJumpTimer == doubleJumpTimerMax) { isDiveKicking = true; }
         velocity.x = Input.GetAxisRaw("Horizontal") * moveSpeed; 
-        if (velocity.x > 0 && !isBackdashing && stunDuration <= 0 && !attacking.isAttacking && !isDiveKicking)
+        if (velocity.x > 0 && !isBackdashing && stunDuration <= 0 && !attacking.isAttacking && !isDiveKicking && !pausing.isPaused && !pausing.isTextPaused)
         {
             direction = 1;
             transform.localScale = new Vector3(direction, 1, 1);
         }
-        else if (velocity.x < 0 && !isBackdashing && stunDuration <= 0 && !attacking.isAttacking && !isDiveKicking)
+        else if (velocity.x < 0 && !isBackdashing && stunDuration <= 0 && !attacking.isAttacking && !isDiveKicking && !pausing.isPaused && !pausing.isTextPaused)
         {
             direction = -1;
             transform.localScale = new Vector3(direction, 1, 1);
         }
-        anim.SetFloat("velocityX", Mathf.Abs(velocity.x));
+
+        if (!pausing.isPaused && !pausing.isTextPaused) { anim.SetFloat("velocityX", Mathf.Abs(velocity.x)); }
+        else { anim.SetFloat("velocityX", 0); }
 
 
 
-        if(Input.GetButton("Crouch") && isGrounded && stunDuration <= 0 && !attacking.isAttacking)
+        if (Input.GetButton("Crouch") && isGrounded && stunDuration <= 0 && !attacking.isAttacking && !pausing.isPaused && !pausing.isTextPaused)
         {
             isCrouching = true;
             anim.SetBool("isCrouching", true);

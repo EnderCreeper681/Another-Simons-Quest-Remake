@@ -63,7 +63,7 @@ public class Attacking : MonoBehaviour
             currentSubweapon = subweaponDefault;
         }
         fireColliderTimer -= Time.deltaTime;
-        if (Input.GetButtonDown("Attack") && !isAttacking && !movement.isBackdashing && movement.stunDuration <= 0 && !pausing.isPaused && !movement.isDiveKicking)
+        if (Input.GetButtonDown("Attack") && !isAttacking && !movement.isBackdashing && movement.stunDuration <= 0 && !pausing.isPaused && !pausing.isTextPaused && !movement.isDiveKicking)
         {
             Attack();
         }
@@ -80,7 +80,7 @@ public class Attacking : MonoBehaviour
             isAttacking = false;
             anim.ResetTrigger("isAttacking");
         }
-        if (Input.GetButtonDown("Subweapon") && !isAttacking && !movement.isBackdashing && movement.stunDuration <= 0 && currentSubweapon.title != "Fire Book" && !pausing.isPaused)
+        if (Input.GetButtonDown("Subweapon") && !isAttacking && !movement.isBackdashing && movement.stunDuration <= 0 && currentSubweapon.title != "Fire Book" && !pausing.isPaused & !pausing.isTextPaused && !movement.isDiveKicking)
         {
             UseSubweapon();
         }

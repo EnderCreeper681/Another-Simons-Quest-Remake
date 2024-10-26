@@ -3000,7 +3000,7 @@ Camera:
   far clip plane: 1000
   field of view: 70
   orthographic: 0
-  orthographic size: 7
+  orthographic size: 5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -3067,7 +3067,7 @@ Transform:
   m_GameObject: {fileID: 1285734676}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 478.5, y: 8, z: -10}
+  m_LocalPosition: {x: 528.4597, y: 14.99208, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3264,6 +3264,95 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30926e14b7de3064f844c2304093c9cc, type: 3}
+--- !u!1001 &1726881642
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 652413270652547857, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 652413270652547857, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 469
+      objectReference: {fileID: 0}
+    - target: {fileID: 652413270652547857, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 652413270652547857, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 652413270652547857, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 652413270652547857, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 652413270652547857, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 652413270652547857, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 652413270652547857, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 652413270652547857, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 652413270652547857, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029445076176444481, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029445076176444481, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029445076176444481, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.9375
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271714791560772203, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: title
+      value: Axe
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271714791560772203, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: description
+      value: Throws an axe in an overhead arc.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271714791560772203, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: isSubweapon
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7445783580992519479, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 06f4543ed12b24b44bff0bc1750ff651, type: 3}
+    - target: {fileID: 9182207491139644491, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
+      propertyPath: m_Name
+      value: Knife (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: be369d16f8a6f64419254beb2ac32785, type: 3}
 --- !u!1001 &1895547790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4442,4 +4531,5 @@ SceneRoots:
   - {fileID: 1230579682}
   - {fileID: 425615517}
   - {fileID: 8212035139132147726}
+  - {fileID: 1726881642}
   - {fileID: 844222499}
